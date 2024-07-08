@@ -6,4 +6,4 @@ This image is available on docker hub by the name saisunny07/greeting. To load t
 
                             docker run -d -p3000:3000 saisunny07/greeting
 
-After running the container, user needs to navigate to the http://localhost:3000 page to view the results.
+After running the container, user needs to navigate to the http://localhost:3000 page to view the results. 

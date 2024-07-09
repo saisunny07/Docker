@@ -1,10 +1,10 @@
-#!/bin/bash
+# Capture the container ID of the first running container
+containerId=$(docker ps -q | head -n 1)
 
-
-echo 'no containers running currently...'
-
-echo "no containers present"
-
-#containerId = 'docker ps | awk -F " " "print$1"'
-
-#docker rm -f $containerId
+# Check if containerId is not empty before attempting to remove the container
+if [ -n "$containerId" ]; then
+  # Remove the container
+  docker rm -f "$containerId"
+else
+  echo "No running container found to remove."
+fi

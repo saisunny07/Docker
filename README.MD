@@ -1,4 +1,4 @@
-1)greeting
+1) greeting
 
 This is a simple project which contains files required to build docker image based on Flask web framework of python. This image greets the user by my name.This image is created to run on port 3000 of local host. 
 
